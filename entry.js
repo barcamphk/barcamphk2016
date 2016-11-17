@@ -1,0 +1,3 @@
+// CSS
+require("./scss/style.scss")
+// Any JS file do require...

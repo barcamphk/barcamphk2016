@@ -1,0 +1,32 @@
+{
+  "name": "barcamphk2016",
+  "version": "0.1.0",
+  "description": "Barcamp HK 2016 website",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barcamphk/barcamphk2016.git"
+  },
+  "author": "vincicat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barcamphk/barcamphk2016/issues"
+  },
+  "homepage": "https://github.com/barcamphk/barcamphk2016#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.0",
+    "css-loader": "^0.18.0",
+    "node-sass": "^3.13.0",
+    "postcss-loader": "^1.1.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^1.0.0",
+    "webpack": "^1.13.1"
+  }
+}
