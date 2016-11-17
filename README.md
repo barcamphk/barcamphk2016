@@ -26,12 +26,6 @@ HTML5 + SASS + Autoprefixer w/webpack
   ```
 2. Run the webpack developer
   ```
-  webpack-dev-server --colors
-  ```
-
-  or
-
-  ```
   $ webpack -c -w
   $ python -m SimpleHTTPServer 8000
   ```

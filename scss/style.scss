@@ -1,0 +1,115 @@
+@import '~normalize';
+@import './reset.scss';
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+ // from h5nbp
+ .browserupgrade {
+     margin: 0.2em 0;
+     background: #ffecb3;
+     color: #333;
+     padding: 0.2em 0;
+ }
+
+ //a11y (bootstrap 3)
+ .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* ==========================================================================
+   Main Style
+   ========================================================================== */
+html {
+  background: #c21500; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left top, #c21500 , #ffc500); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left top, #c21500 , #ffc500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100%;
+}
+body {
+  font: 16px / 1.4 sans-serif;
+  color:#fff;
+  min-height:100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  // min-height: calc(100vh - 70px);
+  margin-bottom: -70px;
+}
+
+section.landing {
+  max-width: 100%;
+  font-size: 20px;
+  overflow: hidden;
+  min-height: 182px;
+  .flame {
+    min-width: 205px;
+    max-width: 100%;
+  }
+  .flame, .info {
+    padding: 1rem;
+  }
+  .notice {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+}
+footer {
+  padding: 0 1em;
+  bottom: 0;
+  width: 100%;
+  height:60px;
+
+  .fa {
+    font-size: 48px;
+    color: #fff;
+    margin-left: 0.2em;
+  }
+  .social-media-group {
+    float: right;
+  }
+  .copyleft {
+    margin: 1.8em 0 0;
+    float: left;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 480px) {
+  main {
+    margin-bottom: 2rem;
+  }
+  footer {
+    height: auto;
+    .fa {
+      margin-left: 0;
+      margin-right: 0.2em;
+    }
+    .copyleft, .social-media-group  {
+      float: none;
+    }
+  }
+
+}
