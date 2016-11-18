@@ -1,0 +1,14 @@
+RedirectMatch 404 /\.git
+
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteRule ^ - [E=protossl]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+#  Redirect 301 /schedule https://docs.google.com/spreadsheets/
+</IfModule>
