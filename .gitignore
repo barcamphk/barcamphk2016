@@ -2,3 +2,11 @@
 node_modules
 .DS_Store
 *.css.map
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
