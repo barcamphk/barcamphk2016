@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha256-mIfhv/h3MLq3WSiSlduuZO3saRNzzuf1LK8w3z3l3JY=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=2.1">
 </head>
 
 <body>
@@ -34,14 +34,16 @@
     <header>
       <nav class="navbar navbar-light bg-faded">
         <div class="container">
-          <a class="navbar-brand"></a>
-          <ul class="nav navbar-nav pull-right">
-            <li class="nav-item"><a href="#about" class="nav-link">What is Barcamp?</a></li>
-            <li class="nav-item"><a href="#place-time" class="nav-link">Venue</a></li>
-            <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-            <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
-            <li class="nav-item"><a href="#register" class="nav-link">Register now</a></li>
-          </ul>
+          <button class="navbar-toggler hidden-lg-up  pull-right" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-toggleable-md " id="main-navbar">
+            <a class="navbar-brand" href="#"><img src="images/navbar-logo.png" alt="BarCamp HK" title="BarCamp HK" class="navbar-brand-logo"></a>
+            <ul class="nav navbar-nav pull-right">
+              <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+              <li class="nav-item"><a href="#venue" class="nav-link">Venue</a></li>
+              <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
+              <li class="nav-item"><a href="#register" class="btn btn-secondary">Register now</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -166,8 +168,11 @@
 
     </footer>
   </div>
+
   <!-- script -->
   <!-- see JS section -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha256-j+XrvkQ4jJ99Hj0pJKPr6k0RCgxDDSTs3PBqLrX2EMc=" crossorigin="anonymous"></script>
   <!-- <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
 
 

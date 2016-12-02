@@ -86,6 +86,9 @@ a:hover {
 main > section .container {
   padding: 2em 0; }
 
+.navbar-brand-logo {
+  height: 32px; }
+
 .brand-logo {
   width: auto;
   max-width: 500px; }
