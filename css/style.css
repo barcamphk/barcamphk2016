@@ -14,83 +14,176 @@ html {
   min-height: 100%; }
 
 body {
-  font: 16px / 1.4 sans-serif;
-  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
   min-height: 100%; }
 
-.wrapper {
-  background: #c21500;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left top, #c21500, #ffc500);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  min-height: 100vh; }
+.jumbotron {
+  background-color: transparent;
+  text-align: center; }
 
-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-bottom: -70px;
-  height: 100vh; }
+.clear {
+  clear: both !important;
+  float: none !important; }
 
-section.landing {
-  max-width: 100%;
-  font-size: 20px;
-  overflow: hidden;
-  min-height: 182px; }
-  section.landing .flame {
-    min-width: 270px;
-    max-width: 100%; }
-  section.landing .flame, section.landing .info {
-    padding: 1rem; }
-  section.landing .notice {
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-size: 1em; }
-  section.landing .reg-btn {
+.btn-alternative {
+  background-color: #333;
+  border: none;
+  color: #fff !important; }
+  .btn-alternative:hover, .btn-alternative:focus, .btn-alternative:active {
+    background-color: #666; }
+
+.landing {
+  background: url("/images/landing-bg@md.png") center no-repeat;
+  background-size: cover; }
+  .landing p {
+    font-size: 1.4em;
+    margin-bottom: 0.25em;
+    font-weight: 300; }
+  .landing .event-date {
+    color: #F09222; }
+  .landing .event-time {
+    color: #E85017; }
+  .landing .event-venue {
+    color: #DB2215; }
+  .landing .call-action {
+    margin-top: 1em; }
+
+.btn-register {
+  color: #FFCC03;
+  background-image: none;
+  background-color: transparent;
+  border-color: #FFCC03;
+  border-width: 2px;
+  font-size: 1.4em; }
+  .btn-register:hover {
     color: #fff;
-    background-color: white;
-    border: 2px solid #fff;
-    background-color: transparent;
-    font-size: 1.05em;
-    text-transform: uppercase; }
-  section.landing .map-marker {
-    margin-left: 0.5rem;
+    background-color: #FFCC03;
+    border-color: #FFCC03; }
+  .btn-register.focus, .btn-register:focus {
     color: #fff;
-    font-size: 1.5em; }
-    section.landing .map-marker:hover, section.landing .map-marker .fa-map-marker:hover {
-      color: #eee;
-      cursor: pointer; }
+    background-color: #FFCC03;
+    border-color: #FFCC03; }
+  .btn-register.active, .btn-register:active, .open > .btn-register.dropdown-toggle {
+    color: #fff;
+    background-color: #FFCC03;
+    border-color: #FFCC03; }
+  .btn-register.active.focus, .btn-register.active:focus, .btn-register.active:hover, .btn-register:active.focus, .btn-register:active:focus, .btn-register:active:hover, .open > .btn-register.dropdown-toggle.focus, .open > .btn-register.dropdown-toggle:focus, .open > .btn-register.dropdown-toggle:hover {
+    color: #fff;
+    background-color: #d58512;
+    border-color: #b06d0f; }
+
+h1, h2, a, .icon-bar {
+  color: #D1272E; }
+
+a:focus {
+  outline: none; }
+
+a:hover {
+  color: #EC9232; }
+
+main > section .container {
+  padding: 2em 0; }
+
+.brand-logo {
+  width: auto;
+  max-width: 500px; }
+
+.tagline {
+  text-align: center; }
+  .tagline .hint {
+    color: #111;
+    font-size: 1.1rem; }
+  .tagline .lead {
+    color: #454545; }
+
+.elegant {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, #fff 50%, #666666 50%);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 22px;
+  color: #333333;
+  text-shadow: 1px 0 #fff, 0px 1px #fff, -1px 0 #fff, 0 -1px #fff; }
+
+.speakers {
+  background: url(/images/speaker-bg.jpg) center no-repeat;
+  background-size: cover; }
+  .speakers h2 {
+    color: #FFCC03; }
+    .speakers h2 em {
+      color: #D1272E;
+      font-style: normal; }
+
+.venue {
+  background: url(/images/venue-bg@md.jpg) top center no-repeat;
+  background-size: cover;
+  min-height: 500px; }
+  .venue .venue-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em; }
+    .venue .venue-box .gmap {
+      width: 100%;
+      height: 30vh; }
+
+.sponsors {
+  background-color: #f7f7f7; }
+  .sponsors .card {
+    background: #fff;
+    box-shadow: 1px 1px rgba(17, 17, 17, 0.1);
+    padding: 0.8em 1em 1em;
+    margin-bottom: 2em;
+    border: 1px solid #f7f7f7; }
+    .sponsors .card.caller {
+      background: gold;
+      box-shadow: none;
+      border: none;
+      color: #333;
+      font-weight: 600;
+      padding-left: 10px; }
+  .sponsors h3 {
+    font-size: 1em;
+    margin-top: 0.2em; }
+  .sponsors .card-content {
+    padding: 1em 0; }
+  .sponsors .sponsor {
+    margin-right: 1.8em;
+    display: inline-block; }
+    .sponsors .sponsor:last-child {
+      margin-right: 0; }
+  .sponsors .sponsor-logo {
+    max-width: 200px;
+    max-height: 100px; }
+  .sponsors .fa-lightbulb-o {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.6em;
+    vertical-align: middle; }
+
+.organizers ul li {
+  font-family: monospace; }
 
 footer {
-  padding: 0 1em;
-  bottom: 0;
-  width: 100%;
-  height: 60px; }
-  footer .fa {
-    font-size: 48px;
-    color: #fff;
-    margin-left: 0.2em; }
-  footer .social-media-group {
-    float: right;
-    margin-bottom: 0; }
+  color: #9a9a9a;
+  min-height: 180px;
+  background: #1a1a1a;
+  padding: 1em 0; }
+  footer .container {
+    background: url("/images/footer-logo.png") no-repeat 15px 0;
+    background-size: 12em; }
+  footer a {
+    color: #c5c5c5; }
   footer .copyleft {
-    margin: 1.8em 0 0;
-    float: left; }
+    font-size: 0.8em;
+    text-align: right;
+    margin-top: 2em; }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 480px) {
-  main {
-    margin-bottom: 6rem; }
-  footer {
-    height: auto; }
-    footer .fa {
-      margin-left: 0;
-      margin-right: 0.2em; }
-    footer .copyleft, footer .social-media-group {
-      float: none; }
-    footer .copyleft {
-      margin-top: 0; } }
+@media (min-width: 1200px) {
+  .venue {
+    background-image: url(/images/venue-bg@lg.jpg); } }

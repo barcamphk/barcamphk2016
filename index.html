@@ -22,8 +22,8 @@
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha256-mIfhv/h3MLq3WSiSlduuZO3saRNzzuf1LK8w3z3l3JY=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 
 <body>
@@ -31,35 +31,139 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience or check our <a href="https://www.facebook.com/BarCampHongKong">facebook group</a>.</p>
   <![endif]-->
   <div class="wrapper">
-    <nav class="main">
-    </nav>
-    <!-- main -->
-    <main role="main" id="site">
-      <section class="landing">
-            <div class="flame pull-left">
-              <img src="images/flame.svg">
+    <header>
+      <nav class="navbar navbar-light bg-faded">
+        <div class="container">
+          <a class="navbar-brand"></a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item"><a href="#about" class="nav-link">What is Barcamp?</a></li>
+            <li class="nav-item"><a href="#place-time" class="nav-link">Venue</a></li>
+            <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+            <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
+            <li class="nav-item"><a href="#register" class="nav-link">Register now</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="landing" id="landing">
+      <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+          <h1 class="brand"><span class="sr-only">BarCamp HK 2016</span> <img class="brand-logo" src="images/logo2016@md.png" aria-hidden="true" srcset="images/logo2016@s.png 768w, images/logo2016.png 1600w"></h1>
+          <p class="event-date">Saturday, Dec 10, 2016</p>
+          <p class="event-time">09:30 AM to 06:00 PM</p>
+          <p class="event-venue">3/F Innovation Tower, PolyU</p>
+          <p class="call-action"><a href="https://barcamphk2016.eventbrite.com/" class="btn btn-register btn-lg">Register</a></p>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="tagline">
+        <div class="container">
+            <p class="hint">BarCamp Hong Kong is the biggest <i>unconference</i> in Hong Kong.</p>
+            <p class="lead">No fixed schedule until the actual event.</p>
+            <p class="lead">Any participle can host a session, in any format, on any topic.</p>
+            <p class="lead"><em class="elegant">You are the speaker and the audience.</em></p>
+            <p><a href="https://barcamphk2016.eventbrite.com/">Join us</a>, <em>Expect the Unexpected.</em></p>
+        </div>
+      </section>
+      <section class="speakers" id="speakers">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 venue-box">
+            <h2>Want to give a <em>talk?</em></h2>
+              <p>1) Register in the <a href="https://barcamphk2016.eventbrite.com/">registration page</a></p>
+              <p>2a) Share what you have in mind on the <a class="fb-event-share" href="http://www.facebook.com/BarCampHongKong">BarCamp Hong Kong Facebook Page</a>.
+                We’ll have priority scheduling for topics that have the most Likes.</p>
+              <p>2b) Or, submit your topic to us on the day of the event. be sure to show up early!</p>
+              <p>3) Check the <em>topic wall</em> for the timeslot of you talk once it is scheduled</p>
             </div>
-            <div class="info pull-right">
-              <h1>BarCamp Hong Kong 2016</h1>
-              <p>Saturday, Dec 10, 2016</p>
-              <p>09:30 AM to 06:00 PM</p>
-              <p>3/F Innovation Tower, PolyU <a href="https://goo.gl/maps/54GekFxa7TD2" target="_blank" class="map-marker" title="map" alt="map"><i class="fa fa-map-marker" aria-hidden="true"></i><i class="sr-only">Map</i></a></p>
-              <p><a href="https://barcamphk2016.eventbrite.com" class="btn btn-secondary btn-lg reg-btn">Join Us!</a></p>
-              <p class="notice">Rundown is coming.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule" id="schedule">
+        <div class="container">
+          <h2>Schedule</h2>
+          <p>Registration and started on 9:30am</p>
+          <p>...</p>
+          <p>Detail coming soon</p>
+        </div>
+      </section>
+
+      <section class="venue" id="venue">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 venue-box">
+              <h2>Venue</h2>
+              <p>3/F, Jockey Club Innovation Tower, The Hong Kong Polytechnic University <a href="https://goo.gl/maps/54GekFxa7TD2" target="_blank" class="map-marker" title="map" alt="map"><i class="fa fa-map-marker" aria-hidden="true"></i><i class="sr-only">Map</i></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14765.129612334704!2d114.179148!3d22.305157!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41b4db8708c4f997!2zSm9ja2V5IENsdWIgSW5ub3ZhdGlvbiBUb3dlciDos73ppqzmnIPlibXmlrDmqJM!5e0!3m2!1sen!2shk!4v1480699142155" frameborder="0" style="border:0" allowfullscreen class="gmap"></iframe>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors" id="sponsors">
+
+        <div class="container">
+          <h2>Sponsors</h2>
+          <div class="card caller">
+            <i class="fa fa-lightbulb-o"></i> Wanna be a sponsor? Send <a href="mailto:admin@barcamp.hk?subject=I want to be a sponsor" title="Contact us here">an E-mail to us</a> or <a target="_blank" href="/web/20160527003559/http://www.facebook.com/BarCampHongKong">FB Message to our page</a>
+          </div>
+
+          <div class="card">
+            <header>
+              <h3>Venue</h3>
+            </header>
+            <div class="card-content">
+              <a class="sponsor" href="http://www.sd.polyu.edu.hk/"><img class="sponsor-logo" src="images/sponsor-polyU-small.png" alt="polyU SD"></a>
+            </div>
+          </div>
+
+          <!-- <div class="card">
+            <header>
+              <h3>Supporting Organization</h3>
+            </header>
+            <div class="card-content">
+              <a class="sponsor" href="#/"><img class="sponsor-logo" src="#"></a>
+            </div>
+          </div> -->
+
+        </div>
+
+      </section>
+      <!-- <section class="register">
+        <div class="container">
+
+        </div>
+      </section> -->
+      <section class="organizers">
+        <div class="container">
+          <h2>Organizers</h2>
+          <ul>
+            <li>Bencrox @bencrox</li>
+            <li>Alan @28481k</li>
+            <li>Vinci @vincicat</li>
+          </ul>
+        </div>
       </section>
     </main>
+    <footer>
 
-    <footer class="main">
-      <div class="container-fluid footer-wrapper">
-        <p class="social-media-group">
-          <a class="btn btn-alternative fb-event-share" href="http://www.facebook.com/BarCampHongKong"><span class="sr-only">Facebook</span> <i class="fa fa-facebook-official"  aria-hidden="true"></i></a>
-          <a class="btn btn-alternative tw-event-share" href="http://twitter.com/barcamphk"><span class="sr-only">Twitter</span><i class="fa fa-twitter"  aria-hidden="true"></i></a>
-        </p>
-        <p class="copyleft">
-          This site is licensed under the MIT License (unless otherwise stated).
-        </p>
-      </div>
+          <div class="container">
+            <p class="social-media-group pull-right">
+              <a class="btn btn-alternative fb-event-share" href="http://www.facebook.com/BarCampHongKong"><span class="hidden-xs">Facebook</span> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              <a class="btn btn-alternative tw-event-share" href="http://twitter.com/barcamphk"><span class="hidden-xs">Twitter</span> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </p>
+            <br class="clear">
+            <p class="copyleft">
+              This site is licensed under the MIT License (unless otherwise stated).<br>
+              Background image by <a href="https://commons.wikimedia.org/wiki/File%3AJockey_Club_Innovation_Tower%2C_Hong_Kong_Polytechnic_University_-_20130808.jpg">By Sebastian Wallroth [<a href="http://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>]</a>,<br>
+              <a href="https://commons.wikimedia.org/wiki/File%3A13-08-07-hongkong-by-RalfR-35.jpg">Ralf Roletschek [<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>]</a>
+              Design by Every Website 2015 + BarcampHK2015<br>
+              Coding by <a href="http://about.me/vinci">Vinci</a><br>
+              Source code hosted on <a href="https://github.com/barcamphk/barcamphk2016">Github</a>
+            </p>
+          </div>
+
     </footer>
   </div>
   <!-- script -->
