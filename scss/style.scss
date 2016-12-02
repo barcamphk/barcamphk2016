@@ -291,3 +291,9 @@ footer {
   }
 
 }
+
+@media (max-width: 991px) {
+  .navbar-toggleable-md .navbar-nav {
+      width: 100%;
+  }
+}

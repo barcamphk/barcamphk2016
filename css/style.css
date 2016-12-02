@@ -190,3 +190,7 @@ footer {
 @media (min-width: 1200px) {
   .venue {
     background-image: url(/images/venue-bg@lg.jpg); } }
+
+@media (max-width: 991px) {
+  .navbar-toggleable-md .navbar-nav {
+    width: 100%; } }
