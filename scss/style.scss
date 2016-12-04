@@ -157,7 +157,7 @@ $elegant-text-color:  #333333;
 $elegant-underline-color: lighten($elegant-text-color, 20%);
 $elegant-bg-color: #fff;
 $elegant-font-size: 22px;
-$elegant-bg-size: 1px;
+$elegant-bg-size: 2px;
 $elegant-stroke-size: 1px;
 
 .elegant {
@@ -186,6 +186,9 @@ $elegant-stroke-size: 1px;
 .schedule {
   &, h2 {
     // text-align: center;
+  }
+  h4 {
+    font-size: 1.1em;
   }
 }
 .venue {
@@ -276,7 +279,8 @@ footer {
 // No media query since this is the default in Bootstrap
 
 // Small devices (landscape phones, 544px and up)
-@media (min-width: 544px) {  }
+@media (min-width: 544px) {
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  }
@@ -295,5 +299,27 @@ footer {
 @media (max-width: 991px) {
   .navbar-toggleable-md .navbar-nav {
       width: 100%;
+  }
+  .navbar-fixed-top .container {
+      padding: 0;
+  }
+  .landing {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 543px) {
+  main h2, main p {
+    padding: 0 0.25rem;
+  }
+  table p {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 460px) {
+  footer .container {
+    background-image: none;
   }
 }
