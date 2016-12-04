@@ -155,9 +155,10 @@ main > section .container {
   .hint {
     color: #111;
     font-size: 1.1rem;
+    i { text-shadow: 1px 1px 0px rgba(0,0,0,0.25); }
   }
   .lead {
-    color: #454545;
+    color: #555;
   }
 }
 $elegant-text-color:  #333333;
