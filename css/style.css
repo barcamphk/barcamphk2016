@@ -41,12 +41,12 @@ body {
     font-size: 1.4em;
     margin-bottom: 0.25em;
     font-weight: 300; }
-  .landing .event-date {
-    color: #F09222; }
-  .landing .event-time {
-    color: #E85017; }
-  .landing .event-venue {
-    color: #DB2215; }
+  .landing .event-info {
+    color: #D1272E;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(-20deg, #f4bc13 0%, #db2215 39%, #db8c15 66%, #db2c15 74%, #db2c15 100%);
+    text-shadow: 1px 1px 2px rgba(222, 29, 29, 0.14); }
   .landing .call-action {
     margin-top: 1em; }
 
