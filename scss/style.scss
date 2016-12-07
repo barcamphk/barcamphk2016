@@ -198,6 +198,13 @@ $elegant-stroke-size: 1px;
   h4 {
     font-size: 1.1em;
   }
+  .cell-content {
+    padding: 0
+  }
+  .post-it {
+    background: #FFF9C4;
+    padding: 0.75rem;
+  }
 }
 .venue {
   background: url(/images/venue-bg@md.jpg) top center no-repeat;

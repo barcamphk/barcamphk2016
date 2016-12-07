@@ -129,6 +129,13 @@ main > section .container {
 .schedule h4 {
   font-size: 1.1em; }
 
+.schedule .cell-content {
+  padding: 0; }
+
+.schedule .post-it {
+  background: #FFF9C4;
+  padding: 0.75rem; }
+
 .venue {
   background: url(/images/venue-bg@md.jpg) top center no-repeat;
   background-size: cover;
